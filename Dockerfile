@@ -4,7 +4,7 @@ MAINTAINER  keiranmraine@gmail.com
 
 LABEL uk.ac.sanger.cgp="Cancer Genome Project, Wellcome Trust Sanger Institute" \
       version="2.0.72" \
-      description="bamtofastq program from biobambam2"
+      description="Dockstore.org mappings for biobambam2 tools"
 
 USER  root
 
