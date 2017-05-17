@@ -7,9 +7,9 @@
   "outputperreadgroup": 1,
   "outputperreadgroupsuffixF": "_i.fq.gz",
   "outputperreadgroupsuffixF2": "_i.fq.gz",
-  "outputperreadgroupsuffixO": "junk.gz",
-  "outputperreadgroupsuffixO2": "junk.gz",
-  "outputperreadgroupsuffixS": "junk.gz",
+  "outputperreadgroupsuffixO": "_junk.gz",
+  "outputperreadgroupsuffixO2": "_junk.gz",
+  "outputperreadgroupsuffixS": "_junk.gz",
   "outputperreadgrouprgsm": 1,
 
   "output": {

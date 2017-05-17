@@ -118,7 +118,6 @@ inputs:
   collate:
     type: int?
     doc: "collate pairs"
-    default: 1
     inputBinding:
       prefix: collate=
       separate: false
@@ -126,7 +125,6 @@ inputs:
   combs:
     type: int?
     doc: "collate pairs"
-    default: 0
     inputBinding:
       prefix: combs=
       separate: false
@@ -142,7 +140,6 @@ inputs:
   inputformat:
     type: string?
     doc: "input format: cram, bam or sam [bam]"
-    default: bam
     inputBinding:
       prefix: inputformat=
       separate: false
@@ -164,7 +161,6 @@ inputs:
   exclude:
     type: string?
     doc: "exclude alignments matching any of the given flags [SECONDARY,SUPPLEMENTARY]"
-    default: SECONDARY,SUPPLEMENTARY
     inputBinding:
       prefix: exclude=
       separate: false
@@ -172,7 +168,6 @@ inputs:
   disablevalidation:
     type: int?
     doc: "disable validation of input data [0]"
-    default: 0
     inputBinding:
       prefix: disablevalidation=
       separate: false
@@ -180,7 +175,6 @@ inputs:
   colhlog:
     type: int?
     doc: "base 2 logarithm of hash table size used for collation [18]"
-    default: 18
     inputBinding:
       prefix: colhlog=
       separate: false
@@ -188,7 +182,6 @@ inputs:
   colsbs:
     type: int?
     doc: "size of hash table overflow list in bytes [33554432]"
-    default: 33554432
     inputBinding:
       prefix: colsbs=
       separate: false
@@ -203,7 +196,6 @@ inputs:
   gz:
     type: int?
     doc: "compress output streams in gzip format (default: 0)"
-    default: 0
     inputBinding:
       prefix: gz=
       separate: false
@@ -211,7 +203,6 @@ inputs:
   level:
     type: int?
     doc: "compression setting if gz=1 (-1=zlib default,0=uncompressed,1=fast,9=best)"
-    default: -1
     inputBinding:
       prefix: level=
       separate: false
@@ -219,7 +210,6 @@ inputs:
   fasta:
     type: int?
     doc: "output FastA instead of FastQ"
-    default: 0
     inputBinding:
       prefix: fasta=
       separate: false
@@ -227,7 +217,6 @@ inputs:
   inputbuffersize:
     type: int?
     doc: "size of input buffer"
-    default: -1
     inputBinding:
       prefix: inputbuffersize=
       separate: false
@@ -235,7 +224,6 @@ inputs:
   outputperreadgroup:
     type: int?
     doc: "split output per read group (for collate=1 only)"
-    default: 0
     inputBinding:
       prefix: outputperreadgroup=
       separate: false
@@ -278,7 +266,6 @@ inputs:
   tryoq:
     type: int?
     doc: "use OQ field instead of quality field if present (collate={0,1} only) [0]"
-    default: 0
     inputBinding:
       prefix: tryoq=
       separate: false
@@ -286,7 +273,6 @@ inputs:
   split:
     type: int?
     doc: "split named output files into chunks of this amount of reads (0: do not split)"
-    default: 0
     inputBinding:
       prefix: split=
       separate: false
@@ -308,7 +294,6 @@ inputs:
   outputperreadgrouprgsm:
     type: int?
     doc: "add read group field SM ahead of read group id when outputperreadgroup=1 (for collate=1 only)"
-    default: 0
     inputBinding:
       prefix: outputperreadgrouprgsm=
       separate: false
@@ -322,8 +307,9 @@ inputs:
 
 outputs:
   output:
-    type: array
-    items: File
+    type:
+      type: array
+      items: File
     outputBinding:
       glob:
         - "*.fq"
