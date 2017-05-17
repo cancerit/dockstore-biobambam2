@@ -26,3 +26,8 @@ RUN bash build/biobambam2-build.sh && \
   rsync -rl biobambam/lib $OPT/. && \
   rsync -rl biobambam/share $OPT/. && \
   rm -rf biobambam
+
+USER    ubuntu
+WORKDIR /home/ubuntu
+
+CMD ["/bin/bash"]
