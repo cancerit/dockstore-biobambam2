@@ -14,6 +14,6 @@
 
   "output": {
     "path": "/tmp/",
-    "class": "File"
+    "class": "Directory"
   }
 }

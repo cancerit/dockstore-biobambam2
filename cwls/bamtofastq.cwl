@@ -85,35 +85,35 @@ inputs:
     doc: "matched pairs first mates"
     inputBinding:
       prefix: F=
-      separate: true
+      separate: false
 
   F2:
     type: string?
     doc: "matched pairs second mates"
     inputBinding:
       prefix: F2=
-      separate: true
+      separate: false
 
   S:
     type: string?
     doc: "single end"
     inputBinding:
       prefix: S=
-      separate: true
+      separate: false
 
   O:
     type: string?
     doc: "unmatched pairs first mates"
     inputBinding:
       prefix: O=
-      separate: true
+      separate: false
 
   O2:
     type: string?
     doc: "unmatched pairs second mates"
     inputBinding:
       prefix: O2=
-      separate: true
+      separate: false
 
   collate:
     type: int?
@@ -121,7 +121,7 @@ inputs:
     default: 1
     inputBinding:
       prefix: collate=
-      separate: true
+      separate: false
 
   combs:
     type: int?
@@ -129,7 +129,7 @@ inputs:
     default: 0
     inputBinding:
       prefix: combs=
-      separate: true
+      separate: false
 
   filename:
     type: File
@@ -137,7 +137,7 @@ inputs:
     streamable: true
     inputBinding:
       prefix: filename=
-      separate: true
+      separate: false
 
   inputformat:
     type: string?
@@ -145,21 +145,21 @@ inputs:
     default: bam
     inputBinding:
       prefix: inputformat=
-      separate: true
+      separate: false
 
   reference:
     type: File?
     doc: "name of reference FastA in case of inputformat=cram"
     inputBinding:
       prefix: reference=
-      separate: true
+      separate: false
 
   ranges:
     type: string?
     doc: "input ranges (bam and cram input only, default: read complete file)"
     inputBinding:
       prefix: ranges=
-      separate: true
+      separate: false
 
   exclude:
     type: string?
@@ -167,7 +167,7 @@ inputs:
     default: SECONDARY,SUPPLEMENTARY
     inputBinding:
       prefix: exclude=
-      separate: true
+      separate: false
 
   disablevalidation:
     type: int?
@@ -175,7 +175,7 @@ inputs:
     default: 0
     inputBinding:
       prefix: disablevalidation=
-      separate: true
+      separate: false
 
   colhlog:
     type: int?
@@ -183,7 +183,7 @@ inputs:
     default: 18
     inputBinding:
       prefix: colhlog=
-      separate: true
+      separate: false
 
   colsbs:
     type: int?
@@ -191,14 +191,14 @@ inputs:
     default: 33554432
     inputBinding:
       prefix: colsbs=
-      separate: true
+      separate: false
 
   T:
     type: string?
     doc: "temporary file name [bamtofastq_*]"
     inputBinding:
       prefix: exclude=
-      separate: true
+      separate: false
 
   gz:
     type: int?
@@ -206,7 +206,7 @@ inputs:
     default: 0
     inputBinding:
       prefix: gz=
-      separate: true
+      separate: false
 
   level:
     type: int?
@@ -214,7 +214,7 @@ inputs:
     default: -1
     inputBinding:
       prefix: level=
-      separate: true
+      separate: false
 
   fasta:
     type: int?
@@ -222,7 +222,7 @@ inputs:
     default: 0
     inputBinding:
       prefix: fasta=
-      separate: true
+      separate: false
 
   inputbuffersize:
     type: int?
@@ -230,7 +230,7 @@ inputs:
     default: -1
     inputBinding:
       prefix: inputbuffersize=
-      separate: true
+      separate: false
 
   outputperreadgroup:
     type: int?
@@ -238,42 +238,42 @@ inputs:
     default: 0
     inputBinding:
       prefix: outputperreadgroup=
-      separate: true
+      separate: false
 
   outputperreadgroupsuffixF:
     type: string?
     doc: "suffix for F category when outputperreadgroup=1 [_1.fq]"
     inputBinding:
       prefix: outputperreadgroupsuffixF=
-      separate: true
+      separate: false
 
   outputperreadgroupsuffixF2:
     type: string?
     doc: "suffix for F2 category when outputperreadgroup=1 [_2.fq]"
     inputBinding:
       prefix: outputperreadgroupsuffixF2=
-      separate: true
+      separate: false
 
   outputperreadgroupsuffixO:
     type: string?
     doc: "suffix for O category when outputperreadgroup=1 [_o1.fq]"
     inputBinding:
       prefix: outputperreadgroupsuffixO=
-      separate: true
+      separate: false
 
   outputperreadgroupsuffixO2:
     type: string?
     doc: "suffix for O2 category when outputperreadgroup=1 [_o2.fq]"
     inputBinding:
       prefix: outputperreadgroupsuffixO2=
-      separate: true
+      separate: false
 
   outputperreadgroupsuffixS:
     type: string?
     doc: "suffix for S category when outputperreadgroup=1 [_s.fq]"
     inputBinding:
       prefix: outputperreadgroupsuffixS=
-      separate: true
+      separate: false
 
   tryoq:
     type: int?
@@ -281,7 +281,7 @@ inputs:
     default: 0
     inputBinding:
       prefix: tryoq=
-      separate: true
+      separate: false
 
   split:
     type: int?
@@ -289,21 +289,21 @@ inputs:
     default: 0
     inputBinding:
       prefix: split=
-      separate: true
+      separate: false
 
   splitprefix:
     type: string?
     doc: "file name prefix if collate=0 and split>0"
     inputBinding:
       prefix: splitprefix=
-      separate: true
+      separate: false
 
   tags:
     type: int?
     doc: "list of aux tags to be copied (default: do not copy any aux fields)"
     inputBinding:
       prefix: tags=
-      separate: true
+      separate: false
 
   outputperreadgrouprgsm:
     type: int?
@@ -311,14 +311,14 @@ inputs:
     default: 0
     inputBinding:
       prefix: outputperreadgrouprgsm=
-      separate: true
+      separate: false
 
   outputperreadgroupprefix:
     type: string?
     doc: "prefix added in front of file names if outputperreadgroup=1 (for collate=1 only)"
     inputBinding:
       prefix: outputperreadgroupprefix=
-      separate: true
+      separate: false
 
 outputs:
   output:
