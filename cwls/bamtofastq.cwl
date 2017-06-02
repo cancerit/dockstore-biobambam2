@@ -10,20 +10,23 @@ cwlVersion: v1.0
 
 doc: |
     ![build_status](https://quay.io/repository/wtsicgp/dockstore-biobambam2/status)
-    A wrapper for biobambam2 bamtofastq tool. See the [dockstore-biobambam2](https://github.com/cancerit/dockstore-biobambam2) website for more information about this wrapper.
+
+    A wrapper for biobambam2 bamtofastq tool. See the [dockstore-biobambam2](https://github.com/cancerit/dockstore-biobambam2)
+    website for more information about this wrapper.
+
     For queries relating to the underlying software see [biobambam2](https://github.com/gt1/biobambam2).
 
     NOTE: Please ensure you use file extensions that match the following so that outputs are captured:
 
     *  For FASTQ:
-      * .fq
-      * .fq.gz
+      * `.fq`
+      * `.fq.gz`
     *  For FASTA:
-      * .fa
-      * .fa.gz
+      * `.fa`
+      * `.fa.gz`
 
     Usage at time of writing:
-    
+
     ```
     biobambam2 is distributed under version 3 of the GNU General Public License.
 
@@ -65,8 +68,13 @@ doc: |
     ```
 
     Some options are not available within the wrapper:
-      outputdir=<>                                : directory for output if outputperreadgroup=1 (default: current directory)
-      T=<[bamtofastq_ea1e73415eba_15_1495014816]> : temporary file name
+
+    ```
+    outputdir=<>                                : directory for output if outputperreadgroup=1 (default: current directory)
+    T=<[bamtofastq_ea1e73415eba_15_1495014816]> : temporary file name
+    ```
+
+    All option names have been maintained in the CWL mapping.
 
 dct:creator:
   "@id": "http://orcid.org/0000-0002-5634-1539"
