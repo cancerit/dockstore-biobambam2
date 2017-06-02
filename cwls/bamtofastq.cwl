@@ -14,12 +14,13 @@ doc: |
     For queries relating to the underlying software see [biobambam2](https://github.com/gt1/biobambam2).
 
     NOTE: Please ensure you use file extensions that match the following so that outputs are captured:
-      For FASTQ:
-        .fq
-        .fq.gz
-      For FASTA:
-        .fa
-        .fa.gz
+    
+    *  For FASTQ:
+      * .fq
+      * .fq.gz
+    *  For FASTA:
+      * .fa
+      * .fa.gz
 
     Usage at time of writing:
       biobambam2 is distributed under version 3 of the GNU General Public License.
