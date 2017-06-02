@@ -16,14 +16,7 @@ doc: |
 
     For queries relating to the underlying software see [biobambam2](https://github.com/gt1/biobambam2).
 
-    NOTE: Please ensure you use file extensions that match the following so that outputs are captured:
-
-    *  For FASTQ:
-      * `.fq`
-      * `.fq.gz`
-    *  For FASTA:
-      * `.fa`
-      * `.fa.gz`
+    __Minimum Dockstore Version__: 1.2.3
 
     Usage at time of writing:
 
@@ -76,6 +69,15 @@ doc: |
 
     All option names have been maintained in the CWL mapping.
 
+    NOTE: Please ensure you use file extensions that match the following so that outputs are captured:
+
+    *  For FASTQ:
+      * `.fq`
+      * `.fq.gz`
+    *  For FASTA:
+      * `.fa`
+      * `.fa.gz`
+
 dct:creator:
   "@id": "http://orcid.org/0000-0002-5634-1539"
   foaf:name: Keiran M Raine
@@ -83,11 +85,11 @@ dct:creator:
 
 requirements:
   - class: DockerRequirement
-    dockerPull: "quay.io/wtsicgp/dockstore-biobambam2:develop"
+    dockerPull: "quay.io/wtsicgp/dockstore-biobambam2:1.0.0"
 
 hints:
   - class: ResourceRequirement
-    coresMin: 1 # works but long, 24 recommended
+    coresMin: 1
     ramMin: 1000
     outdirMin: 1000 # completely dependent on input data
 
