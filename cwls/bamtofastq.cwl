@@ -14,7 +14,7 @@ doc: |
     For queries relating to the underlying software see [biobambam2](https://github.com/gt1/biobambam2).
 
     NOTE: Please ensure you use file extensions that match the following so that outputs are captured:
-    
+
     *  For FASTQ:
       * .fq
       * .fq.gz
@@ -23,47 +23,49 @@ doc: |
       * .fa.gz
 
     Usage at time of writing:
-      biobambam2 is distributed under version 3 of the GNU General Public License.
+    ```
+    biobambam2 is distributed under version 3 of the GNU General Public License.
 
-      Key=Value pairs:
+    Key=Value pairs:
 
-      F=<[stdout]>                                : matched pairs first mates (file name, NO path)
-      F2=<[stdout]>                               : matched pairs second mates (file name, NO path)
-      S=<[stdout]>                                : single end (file name, NO path)
-      O=<[stdout]>                                : unmatched pairs first mates (file name, NO path)
-      O2=<[stdout]>                               : unmatched pairs second mates (file name, NO path)
-      collate=<[1]>                               : collate pairs
-      combs=<[0]>                                 : print some counts after collation based processing
-      filename=<[stdin]>                          : input filename (default: read file from standard input)
-      inputformat=<[bam]>                         : input format: cram, bam or sam
-      reference=<[]>                              : name of reference FastA in case of inputformat=cram
-      ranges=<[]>                                 : input ranges (bam and cram input only, default: read complete file)
-      exclude=<[SECONDARY,SUPPLEMENTARY]>         : exclude alignments matching any of the given flags
-      disablevalidation=<[0]>                     : disable validation of input data
-      colhlog=<[18]>                              : base 2 logarithm of hash table size used for collation
-      colsbs=<[33554432]>                         : size of hash table overflow list in bytes
-      gz=<[0]>                                    : compress output streams in gzip format (default: 0)
-      level=<[-1]>                                : compression setting if gz=1 (-1=zlib default,0=uncompressed,1=fast,9=best)
-      fasta=<[0]>                                 : output FastA instead of FastQ
-      inputbuffersize=<[-1]>                      : size of input buffer
-      outputperreadgroup=<[0]>                    : split output per read group (for collate=1 only)
-      outputperreadgroupsuffixF=<[_1.fq]>         : suffix for F category when outputperreadgroup=1 (.gz not added when gz=1)
-      outputperreadgroupsuffixF2=<[_2.fq]>        : suffix for F2 category when outputperreadgroup=1 (.gz not added when gz=1)
-      outputperreadgroupsuffixO=<[_o1.fq]>        : suffix for O category when outputperreadgroup=1 (.gz not added when gz=1)
-      outputperreadgroupsuffixO2=<[_o2.fq]>       : suffix for O2 category when outputperreadgroup=1 (.gz not added when gz=1)
-      outputperreadgroupsuffixS=<[_s.fq]>         : suffix for S category when outputperreadgroup=1 (.gz not added when gz=1)
-      tryoq=<[0]>                                 : use OQ field instead of quality field if present (collate={0,1} only)
-      split=<[0]>                                 : split named output files into chunks of this amount of reads (0: do not split)
-      splitprefix=<[bamtofastq_split]>            : file name prefix if collate=0 and split>0 (NO path elements)
-      tags=<[]>                                   : list of aux tags to be copied (default: do not copy any aux fields)
-      outputperreadgrouprgsm=<[0]>                : add read group field SM ahead of read group id when outputperreadgroup=1 (for collate=1 only)
-      outputperreadgroupprefix=<[]>               : prefix added in front of file names if outputperreadgroup=1 (for collate=1 only) (NO path elements)
+    F=<[stdout]>                                : matched pairs first mates (file name, NO path)
+    F2=<[stdout]>                               : matched pairs second mates (file name, NO path)
+    S=<[stdout]>                                : single end (file name, NO path)
+    O=<[stdout]>                                : unmatched pairs first mates (file name, NO path)
+    O2=<[stdout]>                               : unmatched pairs second mates (file name, NO path)
+    collate=<[1]>                               : collate pairs
+    combs=<[0]>                                 : print some counts after collation based processing
+    filename=<[stdin]>                          : input filename (default: read file from standard input)
+    inputformat=<[bam]>                         : input format: cram, bam or sam
+    reference=<[]>                              : name of reference FastA in case of inputformat=cram
+    ranges=<[]>                                 : input ranges (bam and cram input only, default: read complete file)
+    exclude=<[SECONDARY,SUPPLEMENTARY]>         : exclude alignments matching any of the given flags
+    disablevalidation=<[0]>                     : disable validation of input data
+    colhlog=<[18]>                              : base 2 logarithm of hash table size used for collation
+    colsbs=<[33554432]>                         : size of hash table overflow list in bytes
+    gz=<[0]>                                    : compress output streams in gzip format (default: 0)
+    level=<[-1]>                                : compression setting if gz=1 (-1=zlib default,0=uncompressed,1=fast,9=best)
+    fasta=<[0]>                                 : output FastA instead of FastQ
+    inputbuffersize=<[-1]>                      : size of input buffer
+    outputperreadgroup=<[0]>                    : split output per read group (for collate=1 only)
+    outputperreadgroupsuffixF=<[_1.fq]>         : suffix for F category when outputperreadgroup=1 (.gz not added when gz=1)
+    outputperreadgroupsuffixF2=<[_2.fq]>        : suffix for F2 category when outputperreadgroup=1 (.gz not added when gz=1)
+    outputperreadgroupsuffixO=<[_o1.fq]>        : suffix for O category when outputperreadgroup=1 (.gz not added when gz=1)
+    outputperreadgroupsuffixO2=<[_o2.fq]>       : suffix for O2 category when outputperreadgroup=1 (.gz not added when gz=1)
+    outputperreadgroupsuffixS=<[_s.fq]>         : suffix for S category when outputperreadgroup=1 (.gz not added when gz=1)
+    tryoq=<[0]>                                 : use OQ field instead of quality field if present (collate={0,1} only)
+    split=<[0]>                                 : split named output files into chunks of this amount of reads (0: do not split)
+    splitprefix=<[bamtofastq_split]>            : file name prefix if collate=0 and split>0 (NO path elements)
+    tags=<[]>                                   : list of aux tags to be copied (default: do not copy any aux fields)
+    outputperreadgrouprgsm=<[0]>                : add read group field SM ahead of read group id when outputperreadgroup=1 (for collate=1 only)
+    outputperreadgroupprefix=<[]>               : prefix added in front of file names if outputperreadgroup=1 (for collate=1 only) (NO path elements)
 
-      Alignment flags: PAIRED,PROPER_PAIR,UNMAP,MUNMAP,REVERSE,MREVERSE,READ1,READ2,SECONDARY,QCFAIL,DUP,SUPPLEMENTARY
+    Alignment flags: PAIRED,PROPER_PAIR,UNMAP,MUNMAP,REVERSE,MREVERSE,READ1,READ2,SECONDARY,QCFAIL,DUP,SUPPLEMENTARY
 
-    Some options are not available within the wrapper:
-      outputdir=<>                                : directory for output if outputperreadgroup=1 (default: current directory)
-      T=<[bamtofastq_ea1e73415eba_15_1495014816]> : temporary file name
+  Some options are not available within the wrapper:
+    outputdir=<>                                : directory for output if outputperreadgroup=1 (default: current directory)
+    T=<[bamtofastq_ea1e73415eba_15_1495014816]> : temporary file name
+    ```
 
 dct:creator:
   "@id": "http://orcid.org/0000-0002-5634-1539"
