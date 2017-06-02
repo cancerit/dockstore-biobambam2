@@ -1,6 +1,11 @@
 # dockstore-biobambam2
 
-`dockstore-biobambam2` is a dockstore.org wrapper for the tools of [biobambam2](https://github.com/gt1/biobambam2).
+`dockstore-biobambam2` is a dockstore.org wrapper for the tools of [biobambam2](https://github.com/gt1/biobambam2).  This has been packaged specifically for use with the [Dockstore.org](https://dockstore.org/) framework.
+
+[![Docker Repository on Quay](https://quay.io/repository/wtsicgp/dockstore-biobambam2/status "Docker Repository on Quay")](https://quay.io/repository/wtsicgp/dockstore-biobambam2)
+
+[![Build Status](https://travis-ci.org/cancerit/dockstore-biobambam2.svg?branch=master)](https://travis-ci.org/cancerit/dockstore-biobambam2) : master  
+[![Build Status](https://travis-ci.org/cancerit/dockstore-biobambam2.svg?branch=develop)](https://travis-ci.org/cancerit/dockstore-biobambam2) : develop
 
 This repository includes the Dockerfile directives and a suite of `cwl` files describing each tool.
 
