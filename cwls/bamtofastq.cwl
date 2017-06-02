@@ -23,6 +23,7 @@ doc: |
       * .fa.gz
 
     Usage at time of writing:
+    
     ```
     biobambam2 is distributed under version 3 of the GNU General Public License.
 
@@ -61,11 +62,11 @@ doc: |
     outputperreadgroupprefix=<[]>               : prefix added in front of file names if outputperreadgroup=1 (for collate=1 only) (NO path elements)
 
     Alignment flags: PAIRED,PROPER_PAIR,UNMAP,MUNMAP,REVERSE,MREVERSE,READ1,READ2,SECONDARY,QCFAIL,DUP,SUPPLEMENTARY
-
-  Some options are not available within the wrapper:
-    outputdir=<>                                : directory for output if outputperreadgroup=1 (default: current directory)
-    T=<[bamtofastq_ea1e73415eba_15_1495014816]> : temporary file name
     ```
+
+    Some options are not available within the wrapper:
+      outputdir=<>                                : directory for output if outputperreadgroup=1 (default: current directory)
+      T=<[bamtofastq_ea1e73415eba_15_1495014816]> : temporary file name
 
 dct:creator:
   "@id": "http://orcid.org/0000-0002-5634-1539"
