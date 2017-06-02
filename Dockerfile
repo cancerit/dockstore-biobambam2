@@ -3,7 +3,7 @@ FROM  ubuntu:14.04
 MAINTAINER  keiranmraine@gmail.com
 
 LABEL uk.ac.sanger.cgp="Cancer Genome Project, Wellcome Trust Sanger Institute" \
-      version="2.0.72" \
+      version="1.0.0" \
       description="Dockstore.org mappings for biobambam2 tools"
 
 USER  root
