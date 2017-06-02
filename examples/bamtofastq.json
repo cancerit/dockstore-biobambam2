@@ -1,0 +1,19 @@
+{
+  "filename": {
+    "path": "ftp://ngs.sanger.ac.uk/production/cancer/dockstore/cgpwxs/COLO-829_ex.bam",
+    "class": "File"
+  },
+  "gz": 1,
+  "outputperreadgroup": 1,
+  "outputperreadgroupsuffixF": "_i.fq.gz",
+  "outputperreadgroupsuffixF2": "_i.fq.gz",
+  "outputperreadgroupsuffixO": "_junk.gz",
+  "outputperreadgroupsuffixO2": "_junk.gz",
+  "outputperreadgroupsuffixS": "_junk.gz",
+  "outputperreadgrouprgsm": 1,
+
+  "output": {
+    "path": "/tmp/",
+    "class": "Directory"
+  }
+}
