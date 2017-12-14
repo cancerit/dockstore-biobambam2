@@ -3,7 +3,7 @@
 ## NEXT
 
 * Change to an alpine image to reduce size
-* Update to biobambam2 v2.0.398
+* Update to biobambam2 v2.0.82
 
 ## 1.0.0
 
