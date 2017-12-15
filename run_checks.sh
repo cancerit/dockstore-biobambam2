@@ -1,7 +1,5 @@
 #!/bin/bash
 
-set -e
-
 echo -e "\n##############################"
 echo      "# Running mdl (markdownlint) #"
 echo      "##############################"
