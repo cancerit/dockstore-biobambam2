@@ -4,9 +4,6 @@
 
 [![Docker Repository on Quay](https://quay.io/repository/wtsicgp/dockstore-biobambam2/status "Docker Repository on Quay")](https://quay.io/repository/wtsicgp/dockstore-biobambam2)
 
-[![Build Status](https://travis-ci.org/cancerit/dockstore-biobambam2.svg?branch=master)](https://travis-ci.org/cancerit/dockstore-biobambam2) : master  
-[![Build Status](https://travis-ci.org/cancerit/dockstore-biobambam2.svg?branch=develop)](https://travis-ci.org/cancerit/dockstore-biobambam2) : develop
-
 This repository includes the Dockerfile directives and a suite of `cwl` files describing each tool.
 
 It is a work in progress and tools will be added:
@@ -49,3 +46,8 @@ in the base of the clone:
 ```bash
 ./run_checks.sh
 ```
+
+## No Travis build
+
+Unfortunately biobambam2 takes ~45 minutes to build which prevents travis-CI
+for the project as the max total time is 50 min.
