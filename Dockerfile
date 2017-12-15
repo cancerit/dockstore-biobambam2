@@ -11,6 +11,7 @@ USER  root
 ENV OPT /opt/wtsi-cgp
 ENV PATH $OPT/bin:$PATH
 
+RUN mkdir -p $OPT
 
 RUN apk update\
   && apk upgrade\
