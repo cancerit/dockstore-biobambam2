@@ -12,17 +12,16 @@ This repository includes the Dockerfile directives and a suite of `cwl` files de
 It is a work in progress and tools will be added:
 
 1. As CancerIT require them for tools we want to expose via dockstore.org.
-2. Contribution via [Pull requests](https://github.com/cancerit/dockstore-biobambam2/pulls).
-3. Requests made via [Issues](https://github.com/cancerit/dockstore-biobambam2/issues).
+1. Contribution via [Pull requests](https://github.com/cancerit/dockstore-biobambam2/pulls).
+1. Requests made via [Issues](https://github.com/cancerit/dockstore-biobambam2/issues).
 
-# Current tools
+## Current tools
 
 * bamtofastq - [dockstore-biobambam2/bamtofastq](https://dockstore.org/containers/quay.io/wtsicgp/dockstore-biobambam2/bamtofastq)
 
-# Dockstore version
+## Dockstore version
 
 Requires dockstore cli version 1.2.3+
-
 
 ## Development environment
 
