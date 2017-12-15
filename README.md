@@ -12,13 +12,40 @@ This repository includes the Dockerfile directives and a suite of `cwl` files de
 It is a work in progress and tools will be added:
 
 1. As CancerIT require them for tools we want to expose via dockstore.org.
-2. Contribution via [Pull requests](https://github.com/cancerit/dockstore-biobambam2/pulls).
-3. Requests made via [Issues](https://github.com/cancerit/dockstore-biobambam2/issues).
+1. Contribution via [Pull requests](https://github.com/cancerit/dockstore-biobambam2/pulls).
+1. Requests made via [Issues](https://github.com/cancerit/dockstore-biobambam2/issues).
 
-# Current tools
+## Current tools
 
 * bamtofastq - [dockstore-biobambam2/bamtofastq](https://dockstore.org/containers/quay.io/wtsicgp/dockstore-biobambam2/bamtofastq)
 
-# Dockstore version
+## Dockstore version
 
 Requires dockstore cli version 1.2.3+
+
+## Development environment
+
+This project uses git pre-commit hooks.  As these will execute on your system you
+need to activate them.  Failure to adhere to these may result in rejection of your
+work.
+
+You will need to install:
+
+```
+gem install --user-install mdl
+```
+
+The following command will activate the checks to execute before a commit is processed:
+
+```
+git config core.hooksPath git-hooks
+```
+
+A failure will block a commit, this includes style for terraform.
+
+You can run the same checks manually without a commit by executing the following
+in the base of the clone:
+
+```bash
+./run_checks.sh
+```
