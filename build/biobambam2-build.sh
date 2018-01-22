@@ -10,7 +10,7 @@ BUILDDIR=${PWD}
 INSTALLDIR=${BUILDDIR}/install-dir
 TOOLSDIR=${BUILDDIR}/tools-dir
 PAR=`grep -c ^processor /proc/cpuinfo`
-((PAR++)) # allow cpus+1 for optimal build times
+((PAR*=2)) # allow cpus*2 for optimal build times
 
 
 
