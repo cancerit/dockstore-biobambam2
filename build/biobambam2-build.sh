@@ -1,4 +1,6 @@
 #!/bin/bash
+set -uxe
+
 LIBMAUSVERSION=2.0.431-release-20171214130550
 BIOBAMBAMVERSION=2.0.82-release-20171214120547
 SNAPPYVERSION=1.1.4
@@ -7,9 +9,9 @@ CHRPATHVERSION=0.16.1
 BUILDDIR=${PWD}
 INSTALLDIR=${BUILDDIR}/install-dir
 TOOLSDIR=${BUILDDIR}/tools-dir
-PAR=`cat /proc/cpuinfo | egrep "^processor" | wc -l`
+PAR=`grep -c ^processor /proc/cpuinfo`
 
-set -uxe
+
 
 # get chrpath
 if [ ! -f chrpath-${CHRPATHVERSION}.tar.gz ] ; then
